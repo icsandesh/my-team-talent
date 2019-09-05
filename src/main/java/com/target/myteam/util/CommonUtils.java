@@ -5,6 +5,11 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.util.FileCopyUtils;
+
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 
 @Slf4j
 public class CommonUtils {
@@ -39,6 +44,22 @@ public class CommonUtils {
             log.error("",e);
         }
         return json;
+    }
+
+
+    public static String readContentFromFile(String resourceFilePath){
+
+        String data = "";
+        ClassPathResource cpr = new ClassPathResource(resourceFilePath);
+        try {
+            byte[] bdata = FileCopyUtils.copyToByteArray(cpr.getInputStream());
+            data = new String(bdata, StandardCharsets.UTF_8);
+        } catch (IOException e) {
+            log.warn("IOException", e);
+            throw new RuntimeException("exception occurred");
+        }
+
+        return data;
     }
 
 }

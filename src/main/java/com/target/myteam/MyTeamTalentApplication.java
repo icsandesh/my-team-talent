@@ -16,7 +16,7 @@ import java.nio.file.Files;
 
 
 @Slf4j
-@SpringBootApplication(scanBasePackages = {"com.target.myteam"})
+@SpringBootApplication
 public class MyTeamTalentApplication {
 
 
@@ -29,15 +29,16 @@ public class MyTeamTalentApplication {
     }
 
 
+
+
     @Bean
     public CommandLineRunner addDataToMongdoDB() {
 
-
         return args -> {
 
+            teamMemberRepository.deleteAll();
             log.info("Reading from resource file");
-            File file = ResourceUtils.getFile("classpath:data/team_member.json");
-            String json = new String(Files.readAllBytes(file.toPath()));
+            String json = CommonUtils.readContentFromFile("data/team_member.json");
 
             TeamMemberProfile[] teamMemberProfiles = CommonUtils.getObjectFromStringJson(json, TeamMemberProfile[].class);
 
