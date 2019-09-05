@@ -41,63 +41,143 @@
         }
       ]
     },
-    "groupRole": "Software Engineering ",
+    "groupRole": "Engineering",
     "groupedSkills": [
       {
-        "groupName": "Frontend Programming",
+        "groupName": "Software Engineering ",
         "groupScore": 50,
         "skills": [
           {
-            "name": "html",
+            "name": "Design",
             "score": 50
           },
           {
-            "name": "css",
+            "name": "Backend Programming",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Architecture",
             "score": 75
           },
           {
-            "name": "react",
+            "name": "Development and Operations",
             "score": 25
           }
         ]
       },
       {
-        "groupName": "Backend Programming",
+        "groupName": "Data Science",
         "groupScore": 60,
         "skills": [
           {
-            "name": "java",
+            "name": "Machine Learning",
             "score": 75
           },
           {
-            "name": "SpringBoot",
+            "name": "NLP",
+            "score": 50
+          },
+          {
+            "name": "Computer Vision",
+            "score": 50
+          },
+          {
+            "name": "Data and Database Management",
+            "score": 50
+          },
+          {
+            "name": "Data Security and Privacy",
             "score": 50
           }
         ]
       },
       {
-        "groupName": "Frontend Programming",
+        "groupName": "Leadership",
         "groupScore": 60,
         "skills": [
           {
-            "name": "sql",
+            "name": "Engagement & Teamwork",
             "score": 75
           },
           {
-            "name": "mongodb",
+            "name": "Judgment (Decision Making)",
+            "score": 50
+          },
+          {
+            "name": "Technical Delivery",
+            "score": 50
+          },
+          {
+            "name": "Resource Management",
+            "score": 50
+          },
+          {
+            "name": "Delivery - Deliver Results",
             "score": 50
           }
         ]
       },
       {
-        "groupName": "Architecture",
+        "groupName": "Operational Excellence",
         "groupScore": 0,
-        "skills": []
+        "skills": [
+          {
+            "name": "Operations & Customer Focus",
+            "score": 0
+          },
+          {
+            "name": "Drive Quality",
+            "score": 0
+          },
+          {
+            "name": "Innovate and Simplify",
+            "score": 0
+          }
+        ]
       },
       {
-        "groupName": "Design",
-        "groupScore": 0,
-        "skills": []
+        "groupName": "Planning",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Planning",
+            "score": 50
+          },
+          {
+            "name": "Agile Partnership and Influence",
+            "score": 25
+          },
+          {
+            "name": "Software Management and Operations",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "Problem Solving ",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Technical Problem Solving",
+            "score": 50
+          },
+          {
+            "name": "Analytical Skills",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Communication",
+            "score": 75
+          }
+        ]
       }
     ],
     "traits": [
@@ -149,63 +229,143 @@
         }
       ]
     },
-    "groupRole": "Data Science",
+    "groupRole": "Engineering",
     "groupedSkills": [
       {
-        "groupName": "Machine Learning",
+        "groupName": "Software Engineering ",
         "groupScore": 50,
         "skills": [
           {
-            "name": "html",
+            "name": "Design",
             "score": 50
           },
           {
-            "name": "css",
+            "name": "Backend Programming",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Architecture",
             "score": 75
           },
           {
-            "name": "react",
+            "name": "Development and Operations",
             "score": 25
           }
         ]
       },
       {
-        "groupName": "NLP",
+        "groupName": "Data Science",
         "groupScore": 60,
         "skills": [
           {
-            "name": "java",
+            "name": "Machine Learning",
             "score": 75
           },
           {
-            "name": "SpringBoot",
+            "name": "NLP",
+            "score": 50
+          },
+          {
+            "name": "Computer Vision",
+            "score": 50
+          },
+          {
+            "name": "Data and Database Management",
+            "score": 50
+          },
+          {
+            "name": "Data Security and Privacy",
             "score": 50
           }
         ]
       },
       {
-        "groupName": "Computer Vision",
+        "groupName": "Leadership",
         "groupScore": 60,
         "skills": [
           {
-            "name": "sql",
+            "name": "Engagement & Teamwork",
             "score": 75
           },
           {
-            "name": "mongodb",
+            "name": "Judgment (Decision Making)",
+            "score": 50
+          },
+          {
+            "name": "Technical Delivery",
+            "score": 50
+          },
+          {
+            "name": "Resource Management",
+            "score": 50
+          },
+          {
+            "name": "Delivery - Deliver Results",
             "score": 50
           }
         ]
       },
       {
-        "groupName": "Data Security and Privacy",
+        "groupName": "Operational Excellence",
         "groupScore": 0,
-        "skills": []
+        "skills": [
+          {
+            "name": "Operations & Customer Focus",
+            "score": 0
+          },
+          {
+            "name": "Drive Quality",
+            "score": 0
+          },
+          {
+            "name": "Innovate and Simplify",
+            "score": 0
+          }
+        ]
       },
       {
-        "groupName": "Data and Database Management",
-        "groupScore": 0,
-        "skills": []
+        "groupName": "Planning",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Planning",
+            "score": 50
+          },
+          {
+            "name": "Agile Partnership and Influence",
+            "score": 25
+          },
+          {
+            "name": "Software Management and Operations",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "Problem Solving ",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Technical Problem Solving",
+            "score": 50
+          },
+          {
+            "name": "Analytical Skills",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Communication",
+            "score": 75
+          }
+        ]
       }
     ],
     "traits": [
@@ -257,37 +417,141 @@
         }
       ]
     },
-    "groupRole": "Leadership",
+    "groupRole": "Engineering",
     "groupedSkills": [
       {
-        "groupName": "Engagement & Teamwork",
+        "groupName": "Software Engineering ",
         "groupScore": 50,
         "skills": [
           {
-            "name": "html",
+            "name": "Design",
             "score": 50
           },
           {
-            "name": "css",
+            "name": "Backend Programming",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Architecture",
             "score": 75
           },
           {
-            "name": "react",
+            "name": "Development and Operations",
             "score": 25
           }
         ]
       },
       {
-        "groupName": "Judgment (Decision Making)",
+        "groupName": "Data Science",
         "groupScore": 60,
         "skills": [
           {
-            "name": "java",
+            "name": "Machine Learning",
             "score": 75
           },
           {
-            "name": "SpringBoot",
+            "name": "NLP",
             "score": 50
+          },
+          {
+            "name": "Computer Vision",
+            "score": 50
+          },
+          {
+            "name": "Data and Database Management",
+            "score": 50
+          },
+          {
+            "name": "Data Security and Privacy",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Leadership",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "Engagement & Teamwork",
+            "score": 75
+          },
+          {
+            "name": "Judgment (Decision Making)",
+            "score": 50
+          },
+          {
+            "name": "Technical Delivery",
+            "score": 50
+          },
+          {
+            "name": "Resource Management",
+            "score": 50
+          },
+          {
+            "name": "Delivery - Deliver Results",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Operational Excellence",
+        "groupScore": 0,
+        "skills": [
+          {
+            "name": "Operations & Customer Focus",
+            "score": 0
+          },
+          {
+            "name": "Drive Quality",
+            "score": 0
+          },
+          {
+            "name": "Innovate and Simplify",
+            "score": 0
+          }
+        ]
+      },
+      {
+        "groupName": "Planning",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Planning",
+            "score": 50
+          },
+          {
+            "name": "Agile Partnership and Influence",
+            "score": 25
+          },
+          {
+            "name": "Software Management and Operations",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "Problem Solving ",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Technical Problem Solving",
+            "score": 50
+          },
+          {
+            "name": "Analytical Skills",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Communication",
+            "score": 75
           }
         ]
       }
@@ -341,51 +605,141 @@
         }
       ]
     },
-    "groupRole": "Leadership",
+    "groupRole": "Engineering",
     "groupedSkills": [
       {
-        "groupName": "Operations & Customer Focus",
+        "groupName": "Software Engineering ",
         "groupScore": 50,
         "skills": [
           {
-            "name": "html",
+            "name": "Design",
             "score": 50
           },
           {
-            "name": "css",
+            "name": "Backend Programming",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Architecture",
             "score": 75
           },
           {
-            "name": "react",
+            "name": "Development and Operations",
             "score": 25
           }
         ]
       },
       {
-        "groupName": "Drive Quality",
+        "groupName": "Data Science",
         "groupScore": 60,
         "skills": [
           {
-            "name": "java",
+            "name": "Machine Learning",
             "score": 75
           },
           {
-            "name": "SpringBoot",
+            "name": "NLP",
+            "score": 50
+          },
+          {
+            "name": "Computer Vision",
+            "score": 50
+          },
+          {
+            "name": "Data and Database Management",
+            "score": 50
+          },
+          {
+            "name": "Data Security and Privacy",
             "score": 50
           }
         ]
       },
       {
-        "groupName": "Innovate and Simplify",
+        "groupName": "Leadership",
         "groupScore": 60,
         "skills": [
           {
-            "name": "java",
+            "name": "Engagement & Teamwork",
             "score": 75
           },
           {
-            "name": "SpringBoot",
+            "name": "Judgment (Decision Making)",
             "score": 50
+          },
+          {
+            "name": "Technical Delivery",
+            "score": 50
+          },
+          {
+            "name": "Resource Management",
+            "score": 50
+          },
+          {
+            "name": "Delivery - Deliver Results",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Operational Excellence",
+        "groupScore": 0,
+        "skills": [
+          {
+            "name": "Operations & Customer Focus",
+            "score": 0
+          },
+          {
+            "name": "Drive Quality",
+            "score": 0
+          },
+          {
+            "name": "Innovate and Simplify",
+            "score": 0
+          }
+        ]
+      },
+      {
+        "groupName": "Planning",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Planning",
+            "score": 50
+          },
+          {
+            "name": "Agile Partnership and Influence",
+            "score": 25
+          },
+          {
+            "name": "Software Management and Operations",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "Problem Solving ",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Technical Problem Solving",
+            "score": 50
+          },
+          {
+            "name": "Analytical Skills",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Communication",
+            "score": 75
           }
         ]
       }
@@ -439,51 +793,141 @@
         }
       ]
     },
-    "groupRole": "Planning",
+    "groupRole": "Engineering",
     "groupedSkills": [
       {
-        "groupName": "Planning",
+        "groupName": "Software Engineering ",
         "groupScore": 50,
         "skills": [
           {
-            "name": "html",
+            "name": "Design",
             "score": 50
           },
           {
-            "name": "css",
+            "name": "Backend Programming",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Architecture",
             "score": 75
           },
           {
-            "name": "react",
+            "name": "Development and Operations",
             "score": 25
           }
         ]
       },
       {
-        "groupName": "Agile Partnership and Influence",
+        "groupName": "Data Science",
         "groupScore": 60,
         "skills": [
           {
-            "name": "java",
+            "name": "Machine Learning",
             "score": 75
           },
           {
-            "name": "SpringBoot",
+            "name": "NLP",
+            "score": 50
+          },
+          {
+            "name": "Computer Vision",
+            "score": 50
+          },
+          {
+            "name": "Data and Database Management",
+            "score": 50
+          },
+          {
+            "name": "Data Security and Privacy",
             "score": 50
           }
         ]
       },
       {
-        "groupName": "Software Management and Operations",
+        "groupName": "Leadership",
         "groupScore": 60,
         "skills": [
           {
-            "name": "java",
+            "name": "Engagement & Teamwork",
             "score": 75
           },
           {
-            "name": "SpringBoot",
+            "name": "Judgment (Decision Making)",
             "score": 50
+          },
+          {
+            "name": "Technical Delivery",
+            "score": 50
+          },
+          {
+            "name": "Resource Management",
+            "score": 50
+          },
+          {
+            "name": "Delivery - Deliver Results",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Operational Excellence",
+        "groupScore": 0,
+        "skills": [
+          {
+            "name": "Operations & Customer Focus",
+            "score": 0
+          },
+          {
+            "name": "Drive Quality",
+            "score": 0
+          },
+          {
+            "name": "Innovate and Simplify",
+            "score": 0
+          }
+        ]
+      },
+      {
+        "groupName": "Planning",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Planning",
+            "score": 50
+          },
+          {
+            "name": "Agile Partnership and Influence",
+            "score": 25
+          },
+          {
+            "name": "Software Management and Operations",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "Problem Solving ",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "Technical Problem Solving",
+            "score": 50
+          },
+          {
+            "name": "Analytical Skills",
+            "score": 25
+          },
+          {
+            "name": "Frontend Programming",
+            "score": 25
+          },
+          {
+            "name": "Communication",
+            "score": 75
           }
         ]
       }
