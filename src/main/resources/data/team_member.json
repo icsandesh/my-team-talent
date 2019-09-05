@@ -7,6 +7,7 @@
     "pyramid": "TTS",
     "workLocation": "Bangalore HQ",
     "profile": {
+      "gender": "male",
       "education": [
         {
           "level": "PostGraduation",
@@ -195,6 +196,7 @@
     "pyramid": "TTS",
     "workLocation": "Bangalore HQ",
     "profile": {
+      "gender": "male",
       "education": [
         {
           "level": "PostGraduation",
@@ -383,6 +385,7 @@
     "pyramid": "TTS",
     "workLocation": "Bangalore HQ",
     "profile": {
+      "gender": "male",
       "education": [
         {
           "level": "PostGraduation",
@@ -571,6 +574,7 @@
     "pyramid": "TTS",
     "workLocation": "Bangalore HQ",
     "profile": {
+      "gender": "male",
       "education": [
         {
           "level": "PostGraduation",
@@ -759,6 +763,7 @@
     "pyramid": "TTS",
     "workLocation": "Bangalore HQ",
     "profile": {
+      "gender": "male",
       "education": [
         {
           "level": "PostGraduation",

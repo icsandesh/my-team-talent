@@ -27,6 +27,8 @@ public class TeamMemberProfile {
 
     private String groupRole;
 
+    private Profile profile;
+
     private List<GroupSkill> groupedSkills;
 }
 
@@ -38,9 +40,41 @@ class GroupSkill {
     private List<Skill> skills;
 }
 
+
 @Data
 class Skill {
 
     private String name;
     private Integer score;
 }
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+@Data
+class Profile {
+
+    private String gender;
+    private Float experience;
+    private List<Education> education;
+    private List<ExternalProfileLinks> externalProfileLinks;
+
+}
+
+@JsonIgnoreProperties(ignoreUnknown = true)
+@Data
+class Education {
+    private String level;
+    private String college;
+    private String degree;
+    private Float gpa;
+    private Float percentage;
+}
+
+
+@Data
+class ExternalProfileLinks{
+
+    private String src;
+    private String link;
+}
+
+
