@@ -1,93 +1,498 @@
-[{
-  "lanId": "z00443b",
-  "firstName": "Pavan",
-  "lastName": "Karjol",
-  "email": "pavan.karjol@target.com",
-  "pyramid": "TTS",
-  "workLocation": "Bangalore HQ",
-  "profile": {
-    "education": [
+[
+  {
+    "lanId": "z00443b",
+    "firstName": "Pavan",
+    "lastName": "Karjol",
+    "email": "pavan.karjol@target.com",
+    "pyramid": "TTS",
+    "workLocation": "Bangalore HQ",
+    "profile": {
+      "education": [
+        {
+          "level": "PostGraduation",
+          "college": "IISc",
+          "degree": "MTech",
+          "gpa": 6.5,
+          "percentage": null
+        },
+        {
+          "level": "Graduation",
+          "college": "RVCE",
+          "degree": "BE",
+          "gpa": 8.98,
+          "percentage": null
+        }
+      ],
+      "experience": 5,
+      "certifications": [
+        {
+          "name": "sun java 8",
+          "link": ""
+        }
+      ],
+      "externalProfileLinks": [
+        {
+          "src": "linkedIn",
+          "link": "https://www.linkedin.com/in/pavankarjol/"
+        },
+        {
+          "src": "stackOverFlow",
+          "link": "https://stackoverflow.com/users/1152809/travis-heeter"
+        }
+      ]
+    },
+    "groupRole": "Software Engineering ",
+    "groupedSkills": [
       {
-        "level": "PostGraduation",
-        "college": "IISc",
-        "degree": "MTech",
-        "gpa": 6.5,
-        "percentage": null
+        "groupName": "Frontend Programming",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "html",
+            "score": 50
+          },
+          {
+            "name": "css",
+            "score": 75
+          },
+          {
+            "name": "react",
+            "score": 25
+          }
+        ]
       },
       {
-        "level": "Graduation",
-        "college": "RVCE",
-        "degree": "BE",
-        "gpa": 8.98,
-        "percentage": null
-      }
-    ],
-    "experience": 5,
-    "certifications": [
-      {
-        "name": "sun java 8",
-        "link": ""
-      }
-    ],
-    "externalProfileLinks": [
-      {
-        "src": "linkedIn",
-        "link": "https://www.linkedin.com/in/pavankarjol/"
+        "groupName": "Backend Programming",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "java",
+            "score": 75
+          },
+          {
+            "name": "SpringBoot",
+            "score": 50
+          }
+        ]
       },
       {
-        "src": "stackOverFlow",
-        "link": "https://stackoverflow.com/users/1152809/travis-heeter"
+        "groupName": "Frontend Programming",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "sql",
+            "score": 75
+          },
+          {
+            "name": "mongodb",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Architecture",
+        "groupScore": 0,
+        "skills": []
+      },
+      {
+        "groupName": "Design",
+        "groupScore": 0,
+        "skills": []
       }
+    ],
+    "traits": [
+      "Fast Learner"
+    ],
+    "awards": [
+      ""
     ]
   },
-  "groupRole": "Software Developer",
-  "groupedSkills": [
-    {
-      "groupName": "FrontEnd",
-      "groupScore": 50,
-      "skills": [
+  {
+    "lanId": "z00442b",
+    "firstName": "Adarsha",
+    "lastName": "Sagar",
+    "email": "adarsh.sagar@target.com",
+    "pyramid": "TTS",
+    "workLocation": "Bangalore HQ",
+    "profile": {
+      "education": [
         {
-          "name": "html",
-          "score": 50
+          "level": "PostGraduation",
+          "college": "IISc",
+          "degree": "MTech",
+          "gpa": 6.5,
+          "percentage": null
         },
         {
-          "name": "css",
-          "score": 75
+          "level": "Graduation",
+          "college": "RVCE",
+          "degree": "BE",
+          "gpa": 8.98,
+          "percentage": null
+        }
+      ],
+      "experience": 5,
+      "certifications": [
+        {
+          "name": "sun java 8",
+          "link": ""
+        }
+      ],
+      "externalProfileLinks": [
+        {
+          "src": "linkedIn",
+          "link": "https://www.linkedin.com/in/pavankarjol/"
+        },
+        {
+          "src": "stackOverFlow",
+          "link": "https://stackoverflow.com/users/1152809/travis-heeter"
         }
       ]
     },
-    {
-      "groupName": "Backend",
-      "skills": [
+    "groupRole": "Data Science",
+    "groupedSkills": [
+      {
+        "groupName": "Machine Learning",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "html",
+            "score": 50
+          },
+          {
+            "name": "css",
+            "score": 75
+          },
+          {
+            "name": "react",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "NLP",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "java",
+            "score": 75
+          },
+          {
+            "name": "SpringBoot",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Computer Vision",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "sql",
+            "score": 75
+          },
+          {
+            "name": "mongodb",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Data Security and Privacy",
+        "groupScore": 0,
+        "skills": []
+      },
+      {
+        "groupName": "Data and Database Management",
+        "groupScore": 0,
+        "skills": []
+      }
+    ],
+    "traits": [
+      "Fast Learner"
+    ],
+    "awards": [
+      ""
+    ]
+  },
+  {
+    "lanId": "z00441b",
+    "firstName": "Sagar",
+    "lastName": "DM",
+    "email": "sagar.dm@target.com",
+    "pyramid": "TTS",
+    "workLocation": "Bangalore HQ",
+    "profile": {
+      "education": [
         {
-          "name": "java",
-          "score": 75
+          "level": "PostGraduation",
+          "college": "IISc",
+          "degree": "MTech",
+          "gpa": 6.5,
+          "percentage": null
         },
         {
-          "name": "SpringBoot",
-          "score": 50
+          "level": "Graduation",
+          "college": "RVCE",
+          "degree": "BE",
+          "gpa": 8.98,
+          "percentage": null
+        }
+      ],
+      "experience": 5,
+      "certifications": [
+        {
+          "name": "sun java 8",
+          "link": ""
+        }
+      ],
+      "externalProfileLinks": [
+        {
+          "src": "linkedIn",
+          "link": "https://www.linkedin.com/in/pavankarjol/"
+        },
+        {
+          "src": "stackOverFlow",
+          "link": "https://stackoverflow.com/users/1152809/travis-heeter"
         }
       ]
     },
-    {
-      "groupName": "Database",
-      "skills": [
+    "groupRole": "Leadership",
+    "groupedSkills": [
+      {
+        "groupName": "Engagement & Teamwork",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "html",
+            "score": 50
+          },
+          {
+            "name": "css",
+            "score": 75
+          },
+          {
+            "name": "react",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "Judgment (Decision Making)",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "java",
+            "score": 75
+          },
+          {
+            "name": "SpringBoot",
+            "score": 50
+          }
+        ]
+      }
+    ],
+    "traits": [
+      "Fast Learner"
+    ],
+    "awards": [
+      ""
+    ]
+  },
+  {
+    "lanId": "z00440b",
+    "firstName": "Sunil",
+    "lastName": "Baby",
+    "email": "sunil.baby@target.com",
+    "pyramid": "TTS",
+    "workLocation": "Bangalore HQ",
+    "profile": {
+      "education": [
         {
-          "name": "sql",
-          "score": 75
+          "level": "PostGraduation",
+          "college": "IISc",
+          "degree": "MTech",
+          "gpa": 6.5,
+          "percentage": null
         },
         {
-          "name": "mongodb",
-          "score": 50
+          "level": "Graduation",
+          "college": "RVCE",
+          "degree": "BE",
+          "gpa": 8.98,
+          "percentage": null
+        }
+      ],
+      "experience": 5,
+      "certifications": [
+        {
+          "name": "sun java 8",
+          "link": ""
+        }
+      ],
+      "externalProfileLinks": [
+        {
+          "src": "linkedIn",
+          "link": "https://www.linkedin.com/in/pavankarjol/"
+        },
+        {
+          "src": "stackOverFlow",
+          "link": "https://stackoverflow.com/users/1152809/travis-heeter"
         }
       ]
-    }
-  ],
-  "traits": [
-    "Fast Learner"
-  ],
-  "awards": [
-    ""
-  ]
-}
+    },
+    "groupRole": "Leadership",
+    "groupedSkills": [
+      {
+        "groupName": "Operations & Customer Focus",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "html",
+            "score": 50
+          },
+          {
+            "name": "css",
+            "score": 75
+          },
+          {
+            "name": "react",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "Drive Quality",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "java",
+            "score": 75
+          },
+          {
+            "name": "SpringBoot",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Innovate and Simplify",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "java",
+            "score": 75
+          },
+          {
+            "name": "SpringBoot",
+            "score": 50
+          }
+        ]
+      }
+    ],
+    "traits": [
+      "Fast Learner"
+    ],
+    "awards": [
+      ""
+    ]
+  },
+  {
+    "lanId": "z00439b",
+    "firstName": "Madan",
+    "lastName": "Kumar",
+    "email": "madan.kumar@target.com",
+    "pyramid": "TTS",
+    "workLocation": "Bangalore HQ",
+    "profile": {
+      "education": [
+        {
+          "level": "PostGraduation",
+          "college": "IISc",
+          "degree": "MTech",
+          "gpa": 6.5,
+          "percentage": null
+        },
+        {
+          "level": "Graduation",
+          "college": "RVCE",
+          "degree": "BE",
+          "gpa": 8.98,
+          "percentage": null
+        }
+      ],
+      "experience": 5,
+      "certifications": [
+        {
+          "name": "sun java 8",
+          "link": ""
+        }
+      ],
+      "externalProfileLinks": [
+        {
+          "src": "linkedIn",
+          "link": "https://www.linkedin.com/in/pavankarjol/"
+        },
+        {
+          "src": "stackOverFlow",
+          "link": "https://stackoverflow.com/users/1152809/travis-heeter"
+        }
+      ]
+    },
+    "groupRole": "Planning",
+    "groupedSkills": [
+      {
+        "groupName": "Planning",
+        "groupScore": 50,
+        "skills": [
+          {
+            "name": "html",
+            "score": 50
+          },
+          {
+            "name": "css",
+            "score": 75
+          },
+          {
+            "name": "react",
+            "score": 25
+          }
+        ]
+      },
+      {
+        "groupName": "Agile Partnership and Influence",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "java",
+            "score": 75
+          },
+          {
+            "name": "SpringBoot",
+            "score": 50
+          }
+        ]
+      },
+      {
+        "groupName": "Software Management and Operations",
+        "groupScore": 60,
+        "skills": [
+          {
+            "name": "java",
+            "score": 75
+          },
+          {
+            "name": "SpringBoot",
+            "score": 50
+          }
+        ]
+      }
+    ],
+    "traits": [
+      "Fast Learner"
+    ],
+    "awards": [
+      ""
+    ]
+  }
 ]
