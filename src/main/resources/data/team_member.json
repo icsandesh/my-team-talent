@@ -45,7 +45,7 @@
     {
       "groupName": "FrontEnd",
       "groupScore": 50,
-      "Skills": [
+      "skills": [
         {
           "name": "html",
           "score": 50
@@ -58,7 +58,7 @@
     },
     {
       "groupName": "Backend",
-      "Skills": [
+      "skills": [
         {
           "name": "java",
           "score": 75

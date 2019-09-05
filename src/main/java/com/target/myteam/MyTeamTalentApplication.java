@@ -36,7 +36,6 @@ public class MyTeamTalentApplication {
 
         return args -> {
 
-            teamMemberRepository.deleteAll();
             log.info("Reading from resource file");
             String json = CommonUtils.readContentFromFile("data/team_member.json");
 

@@ -5,6 +5,8 @@ import lombok.Data;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Document(collection = "team_member_profile")
 @Data
@@ -25,12 +27,20 @@ public class TeamMemberProfile {
 
     private String groupRole;
 
-    private GroupSkill groupSkills;
+    private List<GroupSkill> groupedSkills;
 }
 
-
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Data
-class GroupSkill{
+class GroupSkill {
     private String groupName;
     private Integer groupScore;
+    private List<Skill> skills;
+}
+
+@Data
+class Skill {
+
+    private String name;
+    private Integer score;
 }

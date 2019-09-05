@@ -17,13 +17,14 @@ public class CommonUtils {
 
     public static <T> T getObjectFromStringJson(String json, Class<T> className)  {
         ObjectMapper objectMapper = new ObjectMapper();
+        objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
+        objectMapper.setSerializationInclusion(JsonInclude.Include.NON_NULL);
         T obj = null;
         try {
-            objectMapper.configure(SerializationFeature.FAIL_ON_EMPTY_BEANS, false);
             objectMapper.registerModule(new JavaTimeModule());
             obj = objectMapper.readValue(json, className);
         } catch (Exception e) {
-            log.error("e");
+            log.error("e", e);
 
         }
         return obj;
