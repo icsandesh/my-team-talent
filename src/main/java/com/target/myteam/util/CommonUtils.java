@@ -1,4 +1,4 @@
-package com.target.My.Team.Talent.util;
+package com.target.myteam.util;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.databind.ObjectMapper;

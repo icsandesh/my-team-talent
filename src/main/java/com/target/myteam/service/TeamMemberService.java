@@ -1,7 +1,7 @@
-package com.target.My.Team.Talent.service;
+package com.target.myteam.service;
 
-import com.target.My.Team.Talent.model.TeamMemberProfile;
-import com.target.My.Team.Talent.repositories.TeamMemberRepository;
+import com.target.myteam.model.TeamMemberProfile;
+import com.target.myteam.repositories.TeamMemberRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

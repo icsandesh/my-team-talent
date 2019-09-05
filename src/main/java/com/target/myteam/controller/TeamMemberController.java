@@ -1,7 +1,7 @@
-package com.target.My.Team.Talent.controller;
+package com.target.myteam.controller;
 
-import com.target.My.Team.Talent.model.TeamMemberProfile;
-import com.target.My.Team.Talent.service.TeamMemberService;
+import com.target.myteam.model.TeamMemberProfile;
+import com.target.myteam.service.TeamMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;

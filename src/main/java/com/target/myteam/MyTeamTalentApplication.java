@@ -1,8 +1,8 @@
-package com.target.My.Team.Talent;
+package com.target.myteam;
 
-import com.target.My.Team.Talent.model.TeamMemberProfile;
-import com.target.My.Team.Talent.repositories.TeamMemberRepository;
-import com.target.My.Team.Talent.util.CommonUtils;
+import com.target.myteam.model.TeamMemberProfile;
+import com.target.myteam.repositories.TeamMemberRepository;
+import com.target.myteam.util.CommonUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -10,12 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.util.ResourceUtils;
 
-import javax.annotation.PostConstruct;
 import java.io.File;
 import java.nio.file.Files;
-import java.util.Arrays;
 
-@SpringBootApplication
+
+@SpringBootApplication(scanBasePackages = {"com.target.myteam"})
 public class MyTeamTalentApplication {
 
 

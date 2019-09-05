@@ -1,6 +1,6 @@
-package com.target.My.Team.Talent.repositories;
+package com.target.myteam.repositories;
 
-import com.target.My.Team.Talent.model.TeamMemberProfile;
+import com.target.myteam.model.TeamMemberProfile;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Propagation;

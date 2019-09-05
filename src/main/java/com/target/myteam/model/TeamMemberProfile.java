@@ -1,4 +1,4 @@
-package com.target.My.Team.Talent.model;
+package com.target.myteam.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
