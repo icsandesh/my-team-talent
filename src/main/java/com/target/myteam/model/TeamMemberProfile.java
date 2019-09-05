@@ -32,21 +32,6 @@ public class TeamMemberProfile {
     private List<GroupSkill> groupedSkills;
 }
 
-@JsonIgnoreProperties(ignoreUnknown = true)
-@Data
-class GroupSkill {
-    private String groupName;
-    private Integer groupScore;
-    private List<Skill> skills;
-}
-
-
-@Data
-class Skill {
-
-    private String name;
-    private Integer score;
-}
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data

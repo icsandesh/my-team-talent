@@ -1,0 +1,36 @@
+{
+  "input": {
+    "expectedSkill": [
+      {
+        "name": "FrontEnd",
+        "score": 50
+      },
+      {
+        "name": "Planning",
+        "score": 70
+      }
+    ],
+    "teamMemberLanIds": [
+      "z00443b",
+      "z00442b"
+    ]
+  },
+  "output": {
+    "diversityScore": 77,
+    "contextualTeamScore": 55,
+    "absoluteTeamScore": 75,
+    "teamHistogramScores": [
+      {
+        "skill": "FrontEnd",
+        "actual": 50,
+        "expected": 50
+      },
+      {
+        "skill": "Planning",
+        "actual": 50,
+        "expected": 70
+      }
+    ]
+  }
+}
+
