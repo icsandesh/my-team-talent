@@ -1,0 +1,93 @@
+[{
+  "lanId": "z00443b",
+  "firstName": "Pavan",
+  "lastName": "Karjol",
+  "email": "pavan.karjol@target.com",
+  "pyramid": "TTS",
+  "workLocation": "Bangalore HQ",
+  "profile": {
+    "education": [
+      {
+        "level": "PostGraduation",
+        "college": "IISc",
+        "degree": "MTech",
+        "gpa": 6.5,
+        "percentage": null
+      },
+      {
+        "level": "Graduation",
+        "college": "RVCE",
+        "degree": "BE",
+        "gpa": 8.98,
+        "percentage": null
+      }
+    ],
+    "experience": 5,
+    "certifications": [
+      {
+        "name": "sun java 8",
+        "link": ""
+      }
+    ],
+    "externalProfileLinks": [
+      {
+        "src": "linkedIn",
+        "link": "https://www.linkedin.com/in/pavankarjol/"
+      },
+      {
+        "src": "stackOverFlow",
+        "link": "https://stackoverflow.com/users/1152809/travis-heeter"
+      }
+    ]
+  },
+  "groupRole": "Software Developer",
+  "groupedSkills": [
+    {
+      "groupName": "FrontEnd",
+      "groupScore": 50,
+      "Skills": [
+        {
+          "name": "html",
+          "score": 50
+        },
+        {
+          "name": "css",
+          "score": 75
+        }
+      ]
+    },
+    {
+      "groupName": "Backend",
+      "Skills": [
+        {
+          "name": "java",
+          "score": 75
+        },
+        {
+          "name": "SpringBoot",
+          "score": 50
+        }
+      ]
+    },
+    {
+      "groupName": "Database",
+      "skills": [
+        {
+          "name": "sql",
+          "score": 75
+        },
+        {
+          "name": "mongodb",
+          "score": 50
+        }
+      ]
+    }
+  ],
+  "traits": [
+    "Fast Learner"
+  ],
+  "awards": [
+    ""
+  ]
+}
+]

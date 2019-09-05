@@ -1,0 +1,19 @@
+{
+  "lanId": "z00443b",
+  "firstName": "Pavan",
+  "lastName": "Karjol",
+  "email": "pavan.karjol@target.com",
+  "pyramid": "TTS",
+  "workLocation": "Bangalore HQ",
+  "groupRole": "Software Developer",
+  "groupedSkills": [
+    {
+      "groupName": "FrontEnd",
+      "groupScore": 50
+    },
+    {
+      "groupName": "Backend",
+      "groupScore": 40
+    }
+  ]
+}
