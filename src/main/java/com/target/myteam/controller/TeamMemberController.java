@@ -1,5 +1,6 @@
 package com.target.myteam.controller;
 
+import com.target.myteam.model.SkillSet;
 import com.target.myteam.model.TeamMemberProfile;
 import com.target.myteam.service.TeamMemberService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,5 +22,13 @@ public class TeamMemberController {
         return teamMemberService.fetchAllTeamMemberData();
 
     }
+
+    @GetMapping("/skillSet")
+    public SkillSet getAllTeamMemberSkills(){
+        return teamMemberService.fetchSkillSet();
+    }
+
+
+
 
 }
