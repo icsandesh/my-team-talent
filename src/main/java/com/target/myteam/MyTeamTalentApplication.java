@@ -9,10 +9,8 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.util.ResourceUtils;
 
-import java.io.File;
-import java.nio.file.Files;
+import java.util.Arrays;
 
 
 @Slf4j
@@ -29,12 +27,12 @@ public class MyTeamTalentApplication {
     }
 
 
-
-
     @Bean
     public CommandLineRunner addDataToMongdoDB() {
 
         return args -> {
+
+            teamMemberRepository.deleteAll();
 
             log.info("Reading from resource file");
             String json = CommonUtils.readContentFromFile("data/team_member.json");
@@ -42,7 +40,9 @@ public class MyTeamTalentApplication {
             TeamMemberProfile[] teamMemberProfiles = CommonUtils.getObjectFromStringJson(json, TeamMemberProfile[].class);
 
             log.info("teamMember profiles {}", teamMemberProfiles.toString());
-            teamMemberRepository.save(teamMemberProfiles[0]);
+
+            Arrays.stream(teamMemberProfiles).forEach(teamMemberProfile -> teamMemberRepository.save(teamMemberProfile));
+
         };
     }
 
