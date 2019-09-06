@@ -25,6 +25,8 @@ public class TeamMemberProfile {
 
     private String email;
 
+    private String level;
+
     private String groupRole;
 
     private Profile profile;
