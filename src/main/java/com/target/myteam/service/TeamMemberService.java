@@ -124,7 +124,11 @@ public class TeamMemberService {
                 femaleCount++;
             }
         }
-        return (int)Math.ceil(((float)femaleCount * 100 / maleCount ));
+        int score =  (int)Math.ceil(((float)femaleCount * 100 / maleCount ));
+        if(score > 100){
+            return (int)Math.ceil(((float)100 / score) * 100);
+        }
+        return score;
     }
 
     private Integer calculateAbsouluteTeamScore(Map<String, Map<String, Integer>> selectedMembers) {
