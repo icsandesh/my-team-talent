@@ -13,5 +13,6 @@ public class Profile {
     private Float experience;
     private List<Education> education;
     private List<ExternalProfileLinks> externalProfileLinks;
+    private List<String> traits;
 
 }

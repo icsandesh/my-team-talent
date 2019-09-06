@@ -33,8 +33,23 @@ public class TeamMemberService {
 
     public SkillSet fetchSkillSet() {
 
-        String skillSet = CommonUtils.readContentFromFile("data/SkillSet.json");
-        return CommonUtils.getObjectFromStringJson(skillSet, SkillSet.class);
+        List<TeamMemberProfile> all = teamMemberRepository.findAll();
+
+        List<GroupSkill> groupedSkills = all.get(0).getGroupedSkills();
+
+        SkillSet skillSet = new SkillSet();
+
+        List<String> higherLevelSkills = new ArrayList<>();
+        List<String> lowerLevelSkills = new ArrayList<>();
+
+        for (GroupSkill groupedSkill : groupedSkills) {
+            higherLevelSkills.add(groupedSkill.getGroupName());
+            groupedSkill.getSkills().forEach(x -> lowerLevelSkills.add(x.getName()));
+        }
+
+        skillSet.setHigherLevelSkills(higherLevelSkills);
+        skillSet.setLowerLevelSkills(lowerLevelSkills);
+        return skillSet;
     }
 
 
