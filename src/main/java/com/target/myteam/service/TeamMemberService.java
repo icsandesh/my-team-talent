@@ -7,9 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 import java.util.stream.Collectors;
 
 @Transactional
@@ -49,9 +47,10 @@ public class TeamMemberService {
 
         Map<String, Map<String, Integer>> lanIdToSkillMap = buildLanIdToSkillMap(selectedMembers);
 
-        Integer absoluteScore = calculateAbsouluteTeamScore(selectedMembers);
+        Integer absoluteScore = calculateAbsouluteTeamScore(lanIdToSkillMap);
         Integer contextScore = calculateContextualTeamScore(lanIdToSkillMap, teamSkillMatchInput.getExpectedSkill());
         Integer diversityScore = calculateDiversityScore(selectedMembers);
+        List<HistogramSkillScore> histogramSkillScores = calculateHistogramScores(lanIdToSkillMap, teamSkillMatchInput.getExpectedSkill());
 
 
         TeamSkillMatchOutput teamSkillMatchOutput = new TeamSkillMatchOutput();
@@ -59,27 +58,117 @@ public class TeamMemberService {
         teamSkillMatchOutput.setAbsoluteTeamScore(absoluteScore);
         teamSkillMatchOutput.setContextualTeamScore(contextScore);
         teamSkillMatchOutput.setDiversityScore(diversityScore);
+        teamSkillMatchOutput.setTeamHistogramScores(histogramSkillScores);
 
         return teamSkillMatchOutput;
     }
 
+    private List<HistogramSkillScore> calculateHistogramScores(Map<String, Map<String, Integer>> lanIdToSkillMap, List<Skill> expectedSkills) {
+
+
+        List<HistogramSkillScore> histogramSkillScores = new ArrayList<>();
+
+
+        for (Skill expectedSkill : expectedSkills) {
+
+            float numerator = 0;
+            HistogramSkillScore histogramSkillScore = new HistogramSkillScore();
+            for (Map.Entry<String, Map<String, Integer>> memberSkill : lanIdToSkillMap.entrySet()) {
+
+
+                for (Map.Entry<String, Integer> skillEntry : memberSkill.getValue().entrySet()) {
+
+                    if (skillEntry.getKey().equalsIgnoreCase(expectedSkill.getName())) {
+
+                        if (skillEntry.getValue() >= expectedSkill.getScore()) {
+                            numerator += 1;
+                        } else {
+                            numerator += (float) skillEntry.getValue() / expectedSkill.getScore();
+                        }
+                    }
+                }
+            }
+
+            histogramSkillScore.setSkill(expectedSkill.getName());
+            histogramSkillScore.setExpected(expectedSkill.getScore());
+            histogramSkillScore.setActual((int) (numerator * 100 / lanIdToSkillMap.keySet().size()));
+            histogramSkillScores.add(histogramSkillScore);
+        }
+
+        return histogramSkillScores;
+    }
+
     private Integer calculateDiversityScore(List<TeamMemberProfile> selectedMembers) {
-        return 0;
+
+        int maleCount = 0;
+        int femaleCount = 0;
+        for (TeamMemberProfile member : selectedMembers) {
+            if (member.getProfile().getGender().equalsIgnoreCase("male")) {
+                maleCount++;
+            } else {
+                femaleCount++;
+            }
+        }
+        return (int)Math.ceil(((float)femaleCount * 100 / maleCount ));
     }
 
-    private Integer calculateAbsouluteTeamScore(List<TeamMemberProfile> selectedMembers) {
-        return 0;
+    private Integer calculateAbsouluteTeamScore(Map<String, Map<String, Integer>> selectedMembers) {
+
+        int numerator = 0;
+
+        for (Map.Entry<String, Map<String, Integer>> memberSkill : selectedMembers.entrySet()) {
+
+            for (Map.Entry<String, Integer> skillEntry : memberSkill.getValue().entrySet()) {
+
+                if (skillEntry.getValue() != null) {
+                    numerator += skillEntry.getValue();
+                }
+            }
+        }
+
+        SkillSet skillSet = fetchSkillSet();
+        int denominator = skillSet.getHigherLevelSkills().size() + skillSet.getLowerLevelSkills().size();
+
+        return (int)Math.ceil(((double) numerator / (denominator * 100 * selectedMembers.keySet().size())) * 100);
     }
 
-    private Integer calculateContextualTeamScore(Map<String, Map<String, Integer>> lanIdToSkillMap, List<Skill> expectedSkill) {
-        return 0;
+    private Integer calculateContextualTeamScore(Map<String, Map<String, Integer>> lanIdToSkillMap, List<Skill> expectedSkills) {
+
+
+
+        List<Float> perSkillNumerator = new ArrayList<>();
+
+        for (Skill expectedSkill : expectedSkills) {
+
+
+            List<Integer> skillScores = new ArrayList<>();
+            for (Map.Entry<String, Map<String, Integer>> memberSkill : lanIdToSkillMap.entrySet()) {
+                Integer memberSkillScore = memberSkill.getValue().get(expectedSkill.getName());
+                if (memberSkillScore != null) {
+
+                    skillScores.add(memberSkillScore);
+                }
+
+            }
+
+            double skillAvg = skillScores.stream().mapToInt(val -> val).average().orElse(0.0);
+            double perSkill = skillAvg / expectedSkill.getScore();
+            perSkillNumerator.add(perSkill >= 1 ? 1 : (float) perSkill);
+        }
+
+
+        double sum = perSkillNumerator.stream().mapToDouble(a -> a).sum();
+
+        double contextScore = sum * 100 / expectedSkills.size();
+
+        return (int)contextScore;
     }
 
 
-    private Map<String, Map<String,Integer>> buildLanIdToSkillMap(List<TeamMemberProfile> teamMemberProfiles){
+    private Map<String, Map<String, Integer>> buildLanIdToSkillMap(List<TeamMemberProfile> teamMemberProfiles) {
 
 
-        Map<String, Map<String,Integer>> lanIdToSkillMap = new HashMap<>();
+        Map<String, Map<String, Integer>> lanIdToSkillMap = new HashMap<>();
         for (TeamMemberProfile profile : teamMemberProfiles) {
 
             List<GroupSkill> groupedSkills = profile.getGroupedSkills();

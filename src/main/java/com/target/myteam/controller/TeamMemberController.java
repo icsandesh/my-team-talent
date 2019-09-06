@@ -27,25 +27,21 @@ public class TeamMemberController {
 
     @PutMapping("/teamMembers/{teamMemberId}")
     public void updateTeamMember(@PathVariable(value = "teamMemberId") String lanId,
-                                                    @RequestBody TeamMemberProfile teamMemberProfile) {
+                                 @RequestBody TeamMemberProfile teamMemberProfile) {
 
         teamMemberService.saveTeamMemberData(lanId, teamMemberProfile);
-
     }
 
 
     @GetMapping("/skillSet")
-    public SkillSet getAllTeamMemberSkills(){
+    public SkillSet getAllTeamMemberSkills() {
         return teamMemberService.fetchSkillSet();
     }
 
 
     @PostMapping("/computeSkill")
-    public TeamSkillMatchOutput computeTeamSkills(@RequestBody TeamSkillMatchInput teamSkillMatchInput){
+    public TeamSkillMatchOutput computeTeamSkills(@RequestBody TeamSkillMatchInput teamSkillMatchInput) {
         return teamMemberService.computeTeamSkills(teamSkillMatchInput);
     }
-
-
-
 
 }

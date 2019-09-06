@@ -35,17 +35,6 @@ public class TeamMemberProfile {
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 @Data
-class Profile {
-
-    private String gender;
-    private Float experience;
-    private List<Education> education;
-    private List<ExternalProfileLinks> externalProfileLinks;
-
-}
-
-@JsonIgnoreProperties(ignoreUnknown = true)
-@Data
 class Education {
     private String level;
     private String college;

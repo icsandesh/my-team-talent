@@ -14,10 +14,3 @@ public class TeamSkillMatchOutput {
 
 }
 
-@Data
-class HistogramSkillScore{
-    private String skill;
-    private Integer actual;
-    private Integer expected;
-}
-
